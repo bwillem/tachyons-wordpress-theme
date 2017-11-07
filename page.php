@@ -11,7 +11,7 @@
 
 <?php get_header(); ?>
 
-<main id="site-page" class="w-100 pl3 pt2 pl6-ns pt3-ns">
+<main id="site-page" class="w-100 ph2 contain pt2 ph3-ns pt3-ns">
 
 <?php if( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 

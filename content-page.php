@@ -8,38 +8,38 @@
  check_direct();
 
 ?>
-<div id="page-page" <?php post_class('w-100 pt2 pt3-ns'); ?>>
+<div id="page-page" <?php post_class('w-100 pt2 pt3-ns lh-copy'); ?>>
+  <section class='grid grid-33-66'>
+    <div class='grid-sidebar pa3 measure'>
+      <h3 class='mt4 b tracked f5'>hours</h3>
+      <p>Wed-Fri 1500 - 1900</br>
+      Sat&Sun 1200 - 1900</br>
+      Closed Monday & Tuesday</p>
 
-  <div id="page-title" class="w-100">
+      <h3 class='mt4 b tracked f5'>location</h3>
+      <p>2 - 455 Neave Ct.</br>
+      Kelowna, Bc</p>
 
-    <h2 class="f2 f1-ns lh-title measure"><?php the_title(); ?></h2>
+      <h3 class='mt4 b tracked f5'>contact</h3>
+      <p>
+      778.828.3456
+      boundarybrewing@boundarybrewing.beer
+      </p>
+    </div>
+    <div class='grid-main pa3 measure'>
+      <h2 class="mt3 f2"><?php the_title(); ?></h2>
+      <?php the_content(); ?>
+    </div>
+  </section> <!-- close grid -->
+  <div 
+    class='mh3 mv5 img-fp-feature overlay relative'
+    style='background: url("<?php echo get_the_post_thumbnail_url()?>") center center'>
+  </div>
 
-  </div> <!-- page-title -->
-
-  <div id="page-content" class="w-100 f3 lh-copy measure">
-
-    <?php the_content(); ?>
-
-  </div> <!-- end page-content -->
-
-  <div id="page-featured-image" class="w-50-l">
-
-    <?php
-      $minimale_by_rose_thumbnail = esc_url( get_the_post_thumbnail_url() );
-      $minimale_by_rose_thumbnail_id = get_post_thumbnail_id( $post->ID );
-      $minimale_by_rose_alt_text = get_post_meta( $minimale_by_rose_thumbnail_id, '_wp_attachment_image_alt', true );
-      if( !empty( $minimale_by_rose_thumbnail ) ) {
-         if( !empty( $minimale_by_rose_alt_text )){
-           $minimale_by_rose_alt_text = $minimale_by_rose_alt_text;
-         } else {
-           $minimale_by_rose_alt_text = get_post(get_post_thumbnail_id())->post_title;
-         }
-        echo '<img src="'.get_the_post_thumbnail_url().'" alt="'.$minimale_by_rose_alt_text.'" class="mw-100 h-auto" />';
-        }
-    ?>
-
-  </div> <!-- end page-featured-image -->
-
+  <section id='beer'>
+    <h2 class='f1 f-headline-ns tc b'>beer</h2>
+    <?php get_template_part( 'archive', 'beer' ); ?>
+  </section>
   <div id="page-navigation" class="w-100">
 
     <?php wp_link_pages(); ?>
