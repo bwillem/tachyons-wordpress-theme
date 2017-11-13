@@ -36,18 +36,19 @@
     style='background: url("<?php echo get_the_post_thumbnail_url()?>") center center'>
   </div>
 
-  <section id='beer'>
-    <h2 class='f1 tc b'>the beer</h2>
+  <section id='beer' class='section'>
+    <h2 class='f1 tc b'>The Beer</h2>
     <?php get_template_part( 'archive', 'beer' ); ?>
   </section>
-  <section id='instagram'>
-    <h2 class='f1 tc b'>what's happening</h2>
-    [instagram-feed]
+  <section id='instagram' class='section'>
+    <h2 class='f1 tc b'>What's Happening</h2>
+    <?php echo do_shortcode("[instagram-feed]") ?>
   </section>
-  <!-- <div id="page-navigation" class="w-100">
-
+  <section id='about' class='section'>
+    <h2 class='f1 tc b'>About Boundary</h2>
+    <?php dynamic_sidebar('about-section') ?>
+  </section>
     <?php wp_link_pages(); ?>
 
-  </div> end page-navigation -->
 
 </div> <!-- end page-page -->

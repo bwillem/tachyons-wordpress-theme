@@ -79,12 +79,15 @@ add_action( 'after_setup_theme', 'minimale_by_rose_setup' );
  * Enqueues scripts and styles.
  *
  */
-function minimale_by_rose_widgets_init() {
+class AboutSection extends WP_Widget {
 
+}
+
+function minimale_by_rose_widgets_init() {
 	register_sidebar( array(
 		'name'          => 'Content Bottom 1',
 		'id'            => 'sidebar-2',
-		'description'   => 'Appears at the bottom of the content on posts and pages.',
+		'description'   => 'Appears in the footer in the left column.',
 		'before_widget' => '<div id="%1$s" class="gc1 ph3">',
 		'after_widget'  => '</div>',
 		'before_title'  => '<h2 class="f3 f2-ns lh-title measure">',
@@ -94,7 +97,17 @@ function minimale_by_rose_widgets_init() {
 	register_sidebar( array(
 		'name'          => 'Content Bottom 2',
 		'id'            => 'sidebar-3',
-		'description'   => 'Appears at the bottom of the content on posts and pages.',
+		'description'   => 'Appears in the footer in the right column.',
+		'before_widget' => '<div id="%1$s" class="gc2 ph3">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h2 class="f3 f2-ns lh-title measure">',
+		'after_title'   => '</h2>',
+	) );
+	
+	register_sidebar( array(
+		'name'          => 'About Section',
+		'id'            => 'about-section',
+		'description'   => 'Appears on the front page',
 		'before_widget' => '<div id="%1$s" class="gc2 ph3">',
 		'after_widget'  => '</div>',
 		'before_title'  => '<h2 class="f3 f2-ns lh-title measure">',

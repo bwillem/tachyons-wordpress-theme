@@ -20,6 +20,17 @@
 <body id="site" <?php body_class('w-100 pa0 ma0 bg-white near-black sans-serif'); ?>>
 
 <header id="site-header" class="w-100 img-header vh cover overlay" style="background:url('<?php header_image();?>')">
+  <ul class='nav nr white pr6-ns pt4-ns'>
+    <li class='dib'>
+      <a href="#beer">beer</a>
+    </li>
+    <li class='dib'>
+      <a href="#instagram">happenings</a>
+    </li>
+    <li class='dib'>
+      <a href="#about">about</a>
+    </li>
+  </ul>
   <div id="site-header-title" class="pa2 pa6-ns vc z-1">
       <?php
         if ( is_front_page() ) {

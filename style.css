@@ -181,6 +181,24 @@ h2,h3 {
 .round {
   border-radius: 50%
 }
+.section {
+  margin: 6em auto
+}
+.nav {
+  display: none
+}
+@media screen and (min-width: 40em) {
+  .nav {
+    position: absolute;
+    display: block;
+    right: 32px;
+    z-index: 2
+  }
+  .nav a {
+    color: rgba(255,255,255,0.7);
+    padding: 8px 16px
+  }
+}
 /*---------------------------------------------------------------------------
 0069 CSS GRID BITCH
 ---------------------------------------------------------------------------*/
