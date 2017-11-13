@@ -15,14 +15,17 @@
 
   $beer = new WP_Query( $args );
 ?>
-<div class='grid grid-33'>
+<div class='grid grid-33 pa3 mb4'>
 
   <?php
     $i = 1;
     while( $beer->have_posts() ) :
       $beer->the_post();
   ?>
-  <div class='gc-<?php echo $i ?>'>
+  <div class='gc-<?php echo $i ?> measure'>
+    <div class='img-beer-wrap'>
+      <img src="<?php echo get_the_post_thumbnail_url()?>" alt="Boundary Brewing Beer" class='round'>
+    </div>
     <h3 
       class="pt3 f2 lh-title">
       <?php the_title(); ?>

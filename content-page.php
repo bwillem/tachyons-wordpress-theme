@@ -22,11 +22,11 @@
 
       <h3 class='mt4 b tracked f5'>contact</h3>
       <p>
-      778.828.3456
-      boundarybrewing@boundarybrewing.beer
+      778.828.3456</br>
+      boundarybrewing@gmail.com
       </p>
     </div>
-    <div class='grid-main pa3 measure'>
+    <div class='grid-main pa3 pl5-ns measure'>
       <h2 class="mt3 f2"><?php the_title(); ?></h2>
       <?php the_content(); ?>
     </div>
@@ -37,13 +37,17 @@
   </div>
 
   <section id='beer'>
-    <h2 class='f1 f-headline-ns tc b'>beer</h2>
+    <h2 class='f1 tc b'>the beer</h2>
     <?php get_template_part( 'archive', 'beer' ); ?>
   </section>
-  <div id="page-navigation" class="w-100">
+  <section id='instagram'>
+    <h2 class='f1 tc b'>what's happening</h2>
+    [instagram-feed]
+  </section>
+  <!-- <div id="page-navigation" class="w-100">
 
     <?php wp_link_pages(); ?>
 
-  </div> <!-- end page-navigation -->
+  </div> end page-navigation -->
 
 </div> <!-- end page-page -->
