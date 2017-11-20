@@ -39,7 +39,7 @@
           $custom_logo_id = get_theme_mod( 'custom_logo' );
           $logo = wp_get_attachment_image_src( $custom_logo_id , 'full' );
           if ( has_custom_logo() ) {
-            echo '<div id="site-header-custom-logo" class="w-50 img-logo-wrap">';
+            echo '<div id="site-header-custom-logo" class="img-logo-wrap">';
             echo '<img src="'. esc_url( $logo[0] ) .'" alt="Boundary Brewing Logo" class="w-50 img-logo pl1">';
             echo '</div>';
           }

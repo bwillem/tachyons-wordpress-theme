@@ -115,16 +115,16 @@ figure, img, ul, ol, input, button {
   font-family: 'Nexa Rust';
   font-weight: 700;
   src: 
-    local("Nexa Rust Sans"),
-    url("fonts/NEXARUSTSANSBLACK03.OTF")
+    /* local("Nexa Rust Sans"), */
+    url("fonts/NEXARUSTSANSBLACK02.OTF")
     format("opentype");
 }
 @font-face {
   font-family: 'Nexa Rust';
   font-weight: 400;
   src: 
-    local("Nexa Rust Sans"),
-    url("fonts/NEXARUSTSANSBOOK03.OTF")
+    /* local("Nexa Rust Sans"), */
+    url("fonts/NEXARUSTSANSBOOK02.OTF")
     format("opentype");
 }
 p {
@@ -170,6 +170,9 @@ h2,h3 {
   max-width: 1200px;
   margin: 0 auto;
 }
+.img-logo-wrap {
+  width: 80%
+}
 .img-fp-feature {
   height: 320px;
   overflow: hidden
@@ -196,7 +199,7 @@ h2,h3 {
   }
   .nav a {
     color: rgba(255,255,255,0.7);
-    padding: 8px 16px
+    padding: 16px 0 16px 32px
   }
 }
 /*---------------------------------------------------------------------------
@@ -225,6 +228,14 @@ h2,h3 {
 .gc-3 {
   grid-column-start: 1
 }
+.grid-wrap {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 8px
+}
+.one-fourth {
+  grid-column: span 6
+}
 @media screen and (min-width: 40em) {
   .grid-50 {
     grid-template-columns: 50% 50%
@@ -242,6 +253,9 @@ h2,h3 {
   .grid-main {
     grid-column-start: 2;
     grid-row-start: 1
+  }
+  .one-fourth {
+    grid-column: span 3
   }
   .gc-1 {
     grid-column-start: 1;
