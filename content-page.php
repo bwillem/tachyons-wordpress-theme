@@ -8,7 +8,7 @@
  check_direct();
 
 ?>
-<div id="page-page" <?php post_class('w-100 pt2 pt3-ns lh-copy'); ?>>
+<div id='page-page' <?php post_class('w-100 pt2 pt3-ns lh-copy'); ?>>
   <section class='grid grid-33-66'>
     <div class='grid-sidebar pa3 measure'>
       <h3 class='mt4 b tracked f5'>hours</h3>

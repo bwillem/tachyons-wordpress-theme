@@ -229,7 +229,7 @@ h2,h3 {
 .grid-wrap {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-gap: 8px
+  grid-gap: 16px
 }
 .one-fourth {
   grid-column: span 12
