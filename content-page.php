@@ -14,16 +14,18 @@
       <h3 class='mt4 b tracked f5'>hours</h3>
       <p>Wed-Fri 1500 - 1900</br>
       Sat&Sun 1200 - 1900</br>
-      Closed Monday & Tuesday</p>
+      Closed Monday & Tuesday
+      </p>
 
       <h3 class='mt4 b tracked f5'>location</h3>
       <p>2 - 455 Neave Ct.</br>
-      Kelowna, Bc</p>
+      Kelowna, Bc
+      </p>
 
       <h3 class='mt4 b tracked f5'>contact</h3>
       <p>
       778.828.3456</br>
-      boundarybrewing@gmail.com
+      boundarybrewingco@gmail.com
       </p>
     </div>
     <div class='grid-main pa3 pl5-ns measure'>
@@ -33,11 +35,12 @@
   </section> <!-- close grid -->
   <div 
     class='mh3 mv5 img-fp-feature overlay relative'
-    style='background: url("<?php echo get_the_post_thumbnail_url()?>") center center'>
+    style='background: url("<?php echo get_the_post_thumbnail_url()?>") center 80%'>
   </div>
 
   <section id='beer' class='section'>
-    <h2 class='f1 tc b'>The Beer</h2>
+    <h2 class='f1 tc b mb1'>The Beer</h2>
+    <h3 class='mt3 f2 tc mb5'>Flagships</h3>
     <?php get_template_part( 'archive', 'beer' ); ?>
   </section>
   <section id='instagram' class='section'>

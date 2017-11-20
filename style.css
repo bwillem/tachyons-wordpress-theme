@@ -115,7 +115,6 @@ figure, img, ul, ol, input, button {
   font-family: 'Nexa Rust';
   font-weight: 700;
   src: 
-    /* local("Nexa Rust Sans"), */
     url("fonts/NEXARUSTSANSBLACK02.OTF")
     format("opentype");
 }
@@ -123,7 +122,6 @@ figure, img, ul, ol, input, button {
   font-family: 'Nexa Rust';
   font-weight: 400;
   src: 
-    /* local("Nexa Rust Sans"), */
     url("fonts/NEXARUSTSANSBOOK02.OTF")
     format("opentype");
 }
@@ -234,7 +232,7 @@ h2,h3 {
   grid-gap: 8px
 }
 .one-fourth {
-  grid-column: span 6
+  grid-column: span 12
 }
 @media screen and (min-width: 40em) {
   .grid-50 {

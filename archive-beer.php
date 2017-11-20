@@ -8,7 +8,7 @@
  check_direct();
 
   $args = array( 
-      'numberposts' => '6', 
+      'numberposts' => '8', 
       'post_status' => 'publish', 
       'post_type' => 'beer' ,
   );
@@ -26,8 +26,7 @@
     <div class='img-beer-wrap'>
       <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="Boundary Brewing Beer" class='round' />
     </div>
-    <h3 
-      class="pt3 f3 lh-title">
+    <h3 class="pt3 f3 lh-title">
       <?php the_title(); ?>
     </h3>
     <div class="lh-copy">
