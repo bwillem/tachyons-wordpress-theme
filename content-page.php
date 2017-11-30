@@ -19,7 +19,7 @@
 
       <h3 class='mt4 b tracked f5'>location</h3>
       <p>2 - 455 Neave Ct.</br>
-      Kelowna, Bc
+      Kelowna, BC
       </p>
 
       <h3 class='mt4 b tracked f5'>contact</h3>

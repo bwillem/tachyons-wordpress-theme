@@ -23,8 +23,8 @@
       $beer->the_post();
   ?>
   <div class='one-fourth measure'>
-    <div class='img-beer-wrap'>
-      <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="Boundary Brewing Beer" class='round' />
+    <div class='img-beer-wrap round'>
+      <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="Boundary Brewing Beer" class='' />
     </div>
     <h3 class="pt3 f3 lh-title">
       <?php the_title(); ?>
